@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>amaRomach</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+
+    <script src="../semantic/dist/semantic.min.js"></script>
+    <script src="../js/ama-romach.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/ama-romach.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="search-row" class="navbar-row">
+            <img id="ama-romach-img" src="../images/white_logo.png" />
+            <div class="ui fluid action input">
+                <input type="text" placeholder="Search...">
+                <button class="ui primary icon button">
+                    <i class="search icon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="navbar-row">
+            <div id="account-lists" class="navbar-buttons">
+                <div>Account&Lists<i class="caret down icon"></i></div>
+            </div>
+            <div id="cart" class="navbar-buttons">
+                <label id="items-num">(2)</label>
+                <div><i class="large shopping cart icon"></i>cart</div>
+            </div>
+            <div class="ui flowing popup bottom left transition hidden">
+                <div class="ui two column divided aligned grid">
+                    <div class="column">
+                        <h3 class="ui header">Your Account</h3>
+                        <div class="ui link list">
+                            <a class="item">SIGN IN</a>
+                            <a class="item">SIGN UP</a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h3 class="ui header">Your Lists</h3>
+                        <div class="ui link list">
+                            <a class="item">create new Lists</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="ui link cards">
+        <div class="ui card">
+            <div class="image">
+                <img src="../images/oatmeal.jpg">
+            </div>
+            <div class="content">
+                <a class="header">Oatmeal</a>
+                <div class="description">
+                    Hot and fluffy oatmeal & protein powder cake
+                </div>
+            </div>
+            <div class="extra content">
+                <div>&#8362 330.00</div>
+                <div class="ui mini yellow disabled rating" data-rating="3" data-max-rating="5"></div>
+                <button class="ui primary button right floated">Add to cart</button>
+            </div>
+        </div>
+        <div class="ui card">
+            <div class="image">
+                <img src="../images/ws.png">
+            </div>
+            <div class="content">
+                <a class="header">ws</a>
+                <div class="description">
+                    Rare WS license. No need for military email
+                </div>
+            </div>
+            <div class="extra content">
+                <div>&#8362 200.00</div>
+                <div class="ui mini yellow disabled rating" data-rating="3" data-max-rating="5"></div>
+                <button class="ui primary button right floated">Add to cart</button>
+            </div>
+        </div>
+        <div class="ui card">
+            <div class="image">
+                <img src="../images/coconut.png">
+            </div>
+            <div class="content">
+                <a class="header">Coconut</a>
+                <div class="description">
+                    Good coconut to make oil for your bread
+                </div>
+            </div>
+            <div class="extra content">
+                <div>&#8362 100.00</div>
+                <div class="ui mini yellow disabled rating" data-rating="3" data-max-rating="5"></div>
+                <button class="ui primary button right floated">Add to cart</button>
+            </div>
+        </div>
+        <div class="ui card">
+            <div class="image">
+                <img src="../images/beard.jpg">
+            </div>
+            <div class="content">
+                <a class="header">Beard exempt</a>
+                <div class="description">
+                    Your very own license to grow beard
+                </div>
+            </div>
+            <div class="extra content">
+                <div>&#8362 770.00</div>
+                <div class="ui mini yellow disabled rating" data-rating="3" data-max-rating="5"></div>
+                <button class="ui primary button right floated">Add to cart</button>
+            </div>
+        </div>
+        <div class="ui card">
+            <div class="image">
+                <img src="../images/freedom.png">
+            </div>
+            <div class="content">
+                <a class="header">a day off</a>
+                <div class="description">
+                    1 day off work
+                </div>
+            </div>
+            <div class="extra content">
+                <div>&#8362 1,000.00</div>
+                <div class="ui mini yellow disabled rating" data-rating="3" data-max-rating="5"></div>
+                <button class="ui primary button right floated">Add to cart</button>
+            </div>
+        </div>
+        <div class="ui card">
+            <div class="image">
+                <img src="../images/js-book.png">
+            </div>
+            <div class="content">
+                <a class="header">JS book for beginners</a>
+                <div class="description">
+                    Digital javascript book to start coding your first js website
+                </div>
+            </div>
+            <div class="extra content">
+                <div>&#8362 330.00</div>
+                <div class="ui mini yellow disabled rating" data-rating="3" data-max-rating="5"></div>
+                <button class="ui primary button right floated">Add to cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

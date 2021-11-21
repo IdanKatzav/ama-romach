@@ -1,0 +1,120 @@
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cart</title>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+
+	<script src="../semantic/dist/semantic.min.js"></script>
+	<script src="../js/cart.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/cart.css">
+</head>
+
+<body>
+	<div class="container">
+		<nav id="navbar">
+			<div id="search-row" class="navbar-row">
+				<img id="ama-romach-img" src="../images/white_logo.png" />
+				<div class="ui fluid action input">
+					<input type="text" placeholder="Search...">
+					<button class="ui primary icon button">
+						<i class="search icon"></i>
+					</button>
+				</div>
+			</div>
+			<div class="navbar-row">
+				<div id="account-lists" class="navbar-buttons">
+					<div>Account&Lists<i class="caret down icon"></i></div>
+				</div>
+				<div id="cart" class="navbar-buttons">
+					<label id="items-num">(2)</label>
+					<div><i class="large shopping cart icon"></i>cart</div>
+				</div>
+				<div class="ui flowing popup bottom left transition hidden">
+                    <div class="ui two column divided aligned grid">
+                        <div class="column">
+                            <h3 class="ui header">Your Account</h3>
+                            <div class="ui link list">
+                                <a class="item">SIGN IN</a>
+                                <a class="item">SIGN UP</a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <h3 class="ui header">Your Lists</h3>
+                            <div class="ui link list">
+                                <a class="item">create new Lists</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</nav>
+		<div id="cart-row">
+			<div class="ui active modal">
+				<div class="header">
+					Your Shopping Cart
+				</div>
+				<div class="ui divided items">
+					<div class="item">
+						<div class="image">
+							<img src="../images/coconut.png">
+						</div>
+						<div class="content">
+							<a class="header">Coconut</a>
+							<i class="red large times icon right floated"></i>
+							<div class="description">
+								<p>Good coconut to make oil for your beard</p>
+								<span>&#8362 100.00</span>
+							</div>
+							<div class="ui selection dropdown">
+								<input type="hidden" name="ammount">
+								<i class="dropdown icon"></i>
+								<div class="default text">Amount</div>
+								<div class="scrollhint menu">
+								  <div class="item" data-value="1">1</div>
+								  <div class="item" data-value="2">2</div>
+								  <div class="item" data-value="3">3</div>
+								  <div class="item" data-value="4">4</div>
+								  <div class="item" data-value="5">5</div>
+								</div>
+							  </div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="image">
+							<img src="../images/js-book.png">
+						</div>
+						<div class="content">
+							<a class="header">JS book for beginners</a>
+							<i class="red large times icon right floated"></i>
+							<div class="description">
+								<p>Digital javascript book to start coding your first js website</p>
+								<span>&#8362 330.00</span>
+								<br>
+								<span>1</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="total-price">
+					Total Price: &#8362 430.00
+				</div>
+
+				<div class="actions">
+					<div id="exit-cart" class="ui black deny button">
+						continue shopping
+					</div>
+					<div class="ui primary right labeled icon button">
+						checkout
+						<i class="shopping cart icon"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

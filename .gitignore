@@ -108,3 +108,9 @@ dist
 
 # package.lock
 *-lock.json
+
+# vscode
+.vscode
+
+# css
+/css

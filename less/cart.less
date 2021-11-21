@@ -1,0 +1,82 @@
+#navbar {
+    display: flex;
+    background-color: #000000;
+    flex-direction: column;
+    margin-bottom: 1%;
+
+    .navbar-row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+
+        .navbar-buttons {
+            margin-bottom: 0;
+            color: #FFFFFF;
+            align-self: flex-end;
+
+            #items-num {
+                color: #e05d05;
+                font-weight: bolder;
+                font-size: large;
+            }
+
+            &:hover {
+                border-color: #FFFFFF;
+                border-style: solid;
+                border-bottom: none;
+                border-width: 1px;
+
+                &:after {
+                    border-color: #000000;
+                }
+            }
+        }
+
+        #account-lists {
+            display: flex;
+            align-self: flex-end;
+        }
+
+        #cart {
+            display: flex;
+            flex-direction: column;
+            margin-right: 15%;
+            margin-left: 2%;
+        }
+    }
+
+    #search-row {
+        margin: 1%;
+        justify-content: flex-start;
+
+        .input {
+            padding: 1%;
+            width: 50%;
+        }
+
+        #ama-romach-img {
+            margin-top: 1%;
+            height: 4em;
+        }
+    }
+}
+
+#cart-row {
+    display: flex;
+    justify-content: center;
+}
+
+.ui.items {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#total-price {
+    margin: 2em;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
